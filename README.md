@@ -22,7 +22,24 @@ $ npm install eslint-plugin-flow-header --save-dev
 
 ## Usage
 
-Add `flow-header` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+### Recommended configuration
+
+Add `flow-header` to your `.eslintrc` configuration file by extending the `recommended` configuration. The recommended config just adds the `flow-header` rule to your configuration.
+
+```json
+{
+  "extends": [
+    "plugin:flow-header/recommended"
+  ],
+  "plugins": [
+  	"flow-header"
+  ]
+}
+```
+
+### Add Eslint Rule
+
+You can also add the rule manually by using flow-header as a plugin. Add `flow-header` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
